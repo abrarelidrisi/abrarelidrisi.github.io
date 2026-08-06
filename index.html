@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abrar Elidrisi</title>
+  <meta name="description" content="AI researcher working on how language models acquire, retain, and update knowledge. UCL Gatsby Computational Neuroscience Unit. Google DeepMind Scholar 2024/25." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="avatar">AE</div>
+      <div class="header-text">
+        <h1>Abrar Elidrisi</h1>
+        <p class="role">AI Researcher &amp; Research Engineer &mdash; London, UK</p>
+        <p>
+          I study how language models acquire, retain, and update knowledge through different
+          learning mechanisms, and what the consequences are of getting that balance wrong.
+          I am a Research Assistant at <strong>UCL Gatsby Computational Neuroscience Unit</strong>
+          in Dr&nbsp;Andrew Saxe's lab, where I work on the interplay between supervised
+          fine-tuning and in-context learning at the level of internal representations.
+          I am also the <strong>Google DeepMind International Scholar 2024/25</strong>
+          (sole recipient), and I hold an MSc in AI &amp; Machine Learning from the
+          University of Birmingham, top of cohort.
+        </p>
+        <nav class="links">
+          <a href="mailto:abrar.elidrisi@gmail.com">Email</a>
+          <a href="https://github.com/abrarelidrisi" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/abrarelidrisi/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=dPvL6okAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="pub">
+      <h3>Representational De-collapse: In-context Overwriting of Supervised Fine-tuning</h3>
+      <p class="venue">ICLR 2026 &mdash; Trustworthy AI for Machine Learning Workshop &middot; 2026</p>
+      <p>
+        I show that in-context evidence conflicting with fine-tuning can partially reverse the
+        representational collapse that SFT induces, characterised via layerwise Representational
+        Similarity Analysis on controlled synthetic tasks. Work conducted at UCL Gatsby
+        Computational Neuroscience Unit (Dr&nbsp;Andrew Saxe's lab). Ongoing; extension
+        targeting a top-tier venue.
+      </p>
+      <p class="pub-links">
+        <a href="https://openreview.net/forum?id=iZ9eKf1ZCK" target="_blank" rel="noopener">OpenReview</a>
+      </p>
+    </div>
+
+    <div class="pub">
+      <h3>Knowledge Distillation of BERT on Arabic (ArabicDistilBERT)</h3>
+      <p class="venue">
+        ICLR 2023 (Tiny Papers) &middot; NeurIPS 2023 Spotlight, North Africans in ML Workshop &middot;
+        Deep Learning Indaba &middot; 2023
+      </p>
+      <p>
+        Knowledge distillation of BERT for Arabic question answering: 92.4% of BERT's performance
+        at 70% fewer parameters. 20,000+ HuggingFace downloads.
+      </p>
+      <p class="pub-links">
+        <a href="https://openreview.net/forum?id=-bMH1Sk8SSF" target="_blank" rel="noopener">OpenReview</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Research &amp; Projects</h2>
+
+    <div class="entry">
+      <div>
+        <h3>CAL-PPO: Fine-Grained Credit Assignment for RL in LLM Reasoning</h3>
+        <p class="org">MSc Dissertation &mdash; University of Birmingham, in collaboration with FLAIR Lab, University of Oxford</p>
+      </div>
+      <div class="date">2025</div>
+      <ul>
+        <li>Critic-free PPO that uses a few-shot prompted LLM as a Credit Assignment Oracle to locate the first logical failure in a reasoning trace and apply sparse, token-level penalties.</li>
+        <li>GSM8K pass@1: 59% &rarr; 65.25% (Qwen2.5-0.5B + Gemini Oracle). Built on OAT and vLLM.</li>
+        <li>Supervised by Dr&nbsp;Yue Feng (Birmingham); collaboration with FLAIR Lab, University of Oxford.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div>
+        <h3>Sparse Autoencoders for Neural Interpretability</h3>
+        <p class="org">Personal research project</p>
+      </div>
+      <div class="date">2024</div>
+      <ul>
+        <li>End-to-end SAE training on biological neural spike data, producing sparse disentangled representations validated on reconstruction and sparsity metrics.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div>
+        <h3>Research Assistant</h3>
+        <p class="org">UCL Gatsby Computational Neuroscience Unit &mdash; Dr&nbsp;Andrew Saxe's lab &middot; London, UK</p>
+      </div>
+      <div class="date">Sep 2025 &ndash; Present</div>
+      <ul>
+        <li>Studying how supervised fine-tuning and in-context learning interact and overwrite each other on controlled synthetic tasks.</li>
+        <li>Built reproducible PyTorch pipelines for synthetic data generation, model sharding, batched inference, and distributed GPU evaluation.</li>
+        <li>Applied layerwise RSA to probe how competing training signals reshape LLM representations.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div>
+        <h3>Data Analyst</h3>
+        <p class="org">249Startups &middot; Khartoum, Sudan</p>
+      </div>
+      <div class="date">Feb 2021 &ndash; Sep 2024</div>
+      <ul>
+        <li>Built Python/SQL data pipelines, predictive ML models, and dashboards across 10+ portfolio startups.</li>
+        <li>Automated an ETL pipeline, cutting runtime from 2 hours to 15 minutes (8&times; speedup).</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div>
+        <h3>Data Science Intern</h3>
+        <p class="org">AmunData &middot; Khartoum, Sudan</p>
+      </div>
+      <div class="date">Jun 2022 &ndash; Sep 2022</div>
+      <ul>
+        <li>Classified crop types and estimated yields across El Gezira State using Sentinel-2 satellite imagery and a Random Forest classifier.</li>
+        <li>Delivered a full-stack geospatial application (Python, Streamlit, GeoPandas) to the FAO (UN Food and Agriculture Organisation).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div>
+        <h3>MSc Artificial Intelligence &amp; Machine Learning</h3>
+        <p class="org">University of Birmingham</p>
+      </div>
+      <div class="date">Sep 2024 &ndash; Sep 2025</div>
+      <ul>
+        <li><strong>Google DeepMind International Scholar 2024/25</strong> &mdash; sole recipient, fully funded.</li>
+        <li>Top of cohort.</li>
+        <li>Dissertation: <em>CAL-PPO: Fine-Grained Credit Assignment for RL in Reasoning-Driven LLM Training</em> (Dr&nbsp;Yue Feng; FLAIR Lab, University of Oxford).</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div>
+        <h3>BSc Electrical &amp; Electronics Engineering (Software Engineering major)</h3>
+        <p class="org">University of Khartoum</p>
+      </div>
+      <div class="date">Oct 2016 &ndash; Sep 2023</div>
+      <ul>
+        <li>GPA 9.25/10; ranked 2nd of 150 in final two years.</li>
+        <li>Best Graduation Project award (98/100) for ArabicDistilBERT.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community">
+    <h2>Community &amp; Recognition</h2>
+    <ul class="community-list">
+      <li>
+        <span>Google DeepMind International Scholarship &mdash; sole recipient; fully funded MSc</span>
+        <span class="year">2024/25</span>
+      </li>
+      <li>
+        <span>NeurIPS Spotlight Talk, North Africans in ML Workshop &mdash; for ArabicDistilBERT</span>
+        <span class="year">2023</span>
+      </li>
+      <li>
+        <span>Indaba-X Sudan &mdash; co-founder of Sudan's first AI conference; taught 150+ attendees</span>
+        <span class="year">2019, 2021</span>
+      </li>
+      <li>
+        <span>Deep Learning Indaba &mdash; participant</span>
+        <span class="year">2019, 2022</span>
+      </li>
+      <li>
+        <span>Mastercard Foundation TechWorks &mdash; 1st place, programming &amp; data analytics</span>
+        <span class="year">2022</span>
+      </li>
+      <li>
+        <span>IEEEXtreme &mdash; team ranked ~300 / 5,500+ worldwide; 2nd in Sudan</span>
+        <span class="year">2015, 2018</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Abrar Elidrisi &mdash; London, UK</span>
+    <span>
+      <a href="mailto:abrar.elidrisi@gmail.com">abrar.elidrisi@gmail.com</a> &middot;
+      <a href="https://github.com/abrarelidrisi" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/abrarelidrisi/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="https://scholar.google.com/citations?user=dPvL6okAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
