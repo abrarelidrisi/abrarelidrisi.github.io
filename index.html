@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abrar Elidrisi</title>
-  <meta name="description" content="AI researcher and engineer working on how language models learn and adapt. UCL Gatsby Computational Neuroscience Unit. Google DeepMind Scholar 2024/25." />
+  <meta name="description" content="AI Research Engineer. UCL Gatsby Computational Neuroscience Unit. Google DeepMind International Scholar 2024/25. Published at ICLR and NeurIPS." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -43,13 +43,15 @@
 
     <div class="pub">
       <h3>Representational De-collapse: In-context Overwriting of Supervised Fine-tuning</h3>
-      <p class="venue">ICLR 2026 &mdash; Trustworthy AI for Machine Learning Workshop &middot; 2026</p>
+      <p class="venue">ICLR 2026, Trustworthy AI for Machine Learning Workshop &middot; UCL Gatsby Computational Neuroscience Unit</p>
       <p>
-        I show that in-context evidence conflicting with fine-tuning can partially reverse the
-        representational collapse that SFT induces, characterised via layerwise Representational
-        Similarity Analysis on controlled synthetic tasks. Work conducted at UCL Gatsby
-        Computational Neuroscience Unit (Dr&nbsp;Andrew Saxe's lab). Ongoing; extension
-        targeting a top-tier venue.
+        Supervised fine-tuning compresses a model's internal representations in ways that improve
+        task performance but reduce flexibility. This paper shows that in-context evidence
+        conflicting with the fine-tuned behaviour can partially reverse this collapse, measured
+        via layerwise Representational Similarity Analysis on controlled synthetic tasks. The
+        finding has direct implications for alignment: behaviours encoded through SFT are not
+        fixed, and the conditions under which they can be overwritten at inference time are
+        characterisable. Ongoing work targets a top-tier venue.
       </p>
       <p class="pub-links">
         <a href="https://openreview.net/forum?id=iZ9eKf1ZCK" target="_blank" rel="noopener">OpenReview</a>
@@ -58,13 +60,13 @@
 
     <div class="pub">
       <h3>Knowledge Distillation of BERT on Arabic (ArabicDistilBERT)</h3>
-      <p class="venue">
-        ICLR 2023 (Tiny Papers) &middot; NeurIPS 2023 Spotlight, North Africans in ML Workshop &middot;
-        Deep Learning Indaba &middot; 2023
-      </p>
+      <p class="venue">ICLR 2023, Tiny Papers &middot; NeurIPS 2023 Spotlight, North Africans in ML Workshop &middot; Deep Learning Indaba</p>
       <p>
-        Knowledge distillation of BERT for Arabic question answering: 92.4% of BERT's performance
-        at 70% fewer parameters. 20,000+ HuggingFace downloads.
+        Arabic NLP has historically lacked efficient, deployable models. This paper produces a
+        distilled Arabic BERT that retains 92.4% of the teacher model's question-answering
+        performance at 70% fewer parameters, making strong Arabic NLP practical in
+        resource-constrained settings. The model has been downloaded over 20,000 times on
+        HuggingFace.
       </p>
       <p class="pub-links">
         <a href="https://openreview.net/forum?id=-bMH1Sk8SSF" target="_blank" rel="noopener">OpenReview</a>
@@ -79,13 +81,12 @@
     <div class="entry">
       <div>
         <h3>CAL-PPO: Fine-Grained Credit Assignment for RL in LLM Reasoning</h3>
-        <p class="org">MSc Dissertation &mdash; University of Birmingham, in collaboration with FLAIR Lab, University of Oxford</p>
+        <p class="org">MSc Dissertation, University of Birmingham &middot; in collaboration with FLAIR Lab, University of Oxford &middot; supervised by Dr Yue Feng</p>
       </div>
       <div class="date">2025</div>
       <ul>
-        <li>Critic-free PPO that uses a few-shot prompted LLM as a Credit Assignment Oracle to locate the first logical failure in a reasoning trace and apply sparse, token-level penalties.</li>
-        <li>GSM8K pass@1: 59% &rarr; 65.25% (Qwen2.5-0.5B + Gemini Oracle). Built on OAT and vLLM.</li>
-        <li>Supervised by Dr&nbsp;Yue Feng (Birmingham); collaboration with FLAIR Lab, University of Oxford.</li>
+        <li>Standard PPO applies a single scalar reward across an entire reasoning trace, penalising correct steps alongside wrong ones. CAL-PPO replaces the value critic with a Credit Assignment Oracle: a two-stage mechanism that first filters obvious errors with a rule-based verifier, then uses a few-shot prompted LLM to locate the first logical failure and apply a sparse, token-level penalty at that point.</li>
+        <li>Improved GSM8K pass@1 from 59% to 65.25% on Qwen2.5-0.5B. Built on the OAT distributed RL framework with vLLM for inference.</li>
       </ul>
     </div>
 
@@ -96,7 +97,7 @@
       </div>
       <div class="date">2024</div>
       <ul>
-        <li>End-to-end SAE training on biological neural spike data, producing sparse disentangled representations validated on reconstruction and sparsity metrics.</li>
+        <li>End-to-end SAE training on biological neural spike data. Sparse, disentangled representations validated against reconstruction quality and sparsity metrics, with a hyperparameter study on the sparsity-reconstruction trade-off.</li>
       </ul>
     </div>
   </section>
@@ -108,13 +109,13 @@
     <div class="entry">
       <div>
         <h3>Research Assistant</h3>
-        <p class="org">UCL Gatsby Computational Neuroscience Unit &mdash; Dr&nbsp;Andrew Saxe's lab &middot; London, UK</p>
+        <p class="org">UCL Gatsby Computational Neuroscience Unit, Dr Andrew Saxe's lab &middot; London, UK</p>
       </div>
       <div class="date">Sep 2025 &ndash; Present</div>
       <ul>
-        <li>Studying how supervised fine-tuning and in-context learning interact and overwrite each other on controlled synthetic tasks.</li>
-        <li>Built reproducible PyTorch pipelines for synthetic data generation, model sharding, batched inference, and distributed GPU evaluation.</li>
-        <li>Applied layerwise RSA to probe how competing training signals reshape LLM representations.</li>
+        <li>Designed and ran controlled experiments probing how supervised fine-tuning and in-context learning interact, using the minimum number of contradictory in-context examples required to override a fine-tuned rule as a behavioural measure of alignment-induced rigidity.</li>
+        <li>Built reproducible PyTorch pipelines for synthetic data generation, distributed GPU evaluation, and layerwise RSA analysis across model checkpoints.</li>
+        <li>Work produced a paper accepted at the ICLR 2026 Trustworthy AI Workshop; extension targeting a top-tier venue.</li>
       </ul>
     </div>
 
@@ -125,8 +126,7 @@
       </div>
       <div class="date">Feb 2021 &ndash; Sep 2024</div>
       <ul>
-        <li>Built Python/SQL data pipelines, predictive ML models, and dashboards across 10+ portfolio startups.</li>
-        <li>Automated an ETL pipeline, cutting runtime from 2 hours to 15 minutes (8&times; speedup).</li>
+        <li>Built data pipelines, predictive ML models, and dashboards across 10+ portfolio startups. Automated an ETL pipeline that reduced runtime from 2 hours to 15 minutes.</li>
       </ul>
     </div>
 
@@ -137,8 +137,7 @@
       </div>
       <div class="date">Jun 2022 &ndash; Sep 2022</div>
       <ul>
-        <li>Classified crop types and estimated yields across El Gezira State using Sentinel-2 satellite imagery and a Random Forest classifier.</li>
-        <li>Delivered a full-stack geospatial application (Python, Streamlit, GeoPandas) to the FAO (UN Food and Agriculture Organisation).</li>
+        <li>Trained a Random Forest classifier on Sentinel-2 satellite imagery to map crop types and estimate yields across El Gezira State. Built a full-stack geospatial application (Python, Streamlit, GeoPandas) and delivered it to the FAO.</li>
       </ul>
     </div>
   </section>
@@ -154,21 +153,19 @@
       </div>
       <div class="date">Sep 2024 &ndash; Sep 2025</div>
       <ul>
-        <li><strong>Google DeepMind International Scholar 2024/25</strong> &mdash; sole recipient, fully funded.</li>
-        <li>Top of cohort.</li>
-        <li>Dissertation: <em>CAL-PPO: Fine-Grained Credit Assignment for RL in Reasoning-Driven LLM Training</em> (Dr&nbsp;Yue Feng; FLAIR Lab, University of Oxford).</li>
+        <li>Google DeepMind International Scholar 2024/25, sole recipient, fully funded. Top of cohort.</li>
+        <li>Dissertation: <em>CAL-PPO: Fine-Grained Credit Assignment for RL in Reasoning-Driven LLM Training</em>, supervised by Dr Yue Feng, in collaboration with FLAIR Lab, University of Oxford.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div>
-        <h3>BSc Electrical &amp; Electronics Engineering (Software Engineering major)</h3>
+        <h3>BSc Electrical &amp; Electronics Engineering, Software Engineering major</h3>
         <p class="org">University of Khartoum</p>
       </div>
       <div class="date">Oct 2016 &ndash; Sep 2023</div>
       <ul>
-        <li>GPA 9.25/10; ranked 2nd of 150 in final two years.</li>
-        <li>Best Graduation Project award (98/100) for ArabicDistilBERT.</li>
+        <li>GPA 9.25/10, ranked 2nd of 150 in the final two years. Best Graduation Project award (98/100) for ArabicDistilBERT.</li>
       </ul>
     </div>
   </section>
@@ -178,27 +175,27 @@
     <h2>Community &amp; Recognition</h2>
     <ul class="community-list">
       <li>
-        <span>Google DeepMind International Scholarship &mdash; sole recipient; fully funded MSc</span>
+        <span>Google DeepMind International Scholarship, sole recipient, fully funded MSc</span>
         <span class="year">2024/25</span>
       </li>
       <li>
-        <span>NeurIPS Spotlight Talk, North Africans in ML Workshop &mdash; for ArabicDistilBERT</span>
+        <span>NeurIPS Spotlight Talk, North Africans in ML Workshop, for ArabicDistilBERT</span>
         <span class="year">2023</span>
       </li>
       <li>
-        <span>Indaba-X Sudan &mdash; co-founder of Sudan's first AI conference; taught 150+ attendees</span>
+        <span>Indaba-X Sudan, co-founder of Sudan's first AI conference, taught 150+ attendees</span>
         <span class="year">2019, 2021</span>
       </li>
       <li>
-        <span>Deep Learning Indaba &mdash; participant</span>
+        <span>Deep Learning Indaba, participant</span>
         <span class="year">2019, 2022</span>
       </li>
       <li>
-        <span>Mastercard Foundation TechWorks &mdash; 1st place, programming &amp; data analytics</span>
+        <span>Mastercard Foundation TechWorks, 1st place in programming and data analytics</span>
         <span class="year">2022</span>
       </li>
       <li>
-        <span>IEEEXtreme &mdash; team ranked ~300 / 5,500+ worldwide; 2nd in Sudan</span>
+        <span>IEEEXtreme, team ranked ~300 of 5,500+ worldwide, 2nd in Sudan</span>
         <span class="year">2015, 2018</span>
       </li>
     </ul>
