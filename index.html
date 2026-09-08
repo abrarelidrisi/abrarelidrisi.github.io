@@ -45,13 +45,15 @@
       <h3>Representational De-collapse: In-context Overwriting of Supervised Fine-tuning</h3>
       <p class="venue">ICLR 2026, Trustworthy AI for Machine Learning Workshop &middot; UCL Gatsby Computational Neuroscience Unit</p>
       <p>
-        Supervised fine-tuning compresses a model's internal representations in ways that improve
-        task performance but reduce flexibility. This paper shows that in-context evidence
-        conflicting with the fine-tuned behaviour can partially reverse this collapse, measured
-        via layerwise Representational Similarity Analysis on controlled synthetic tasks. The
-        finding has direct implications for alignment: behaviours encoded through SFT are not
-        fixed, and the conditions under which they can be overwritten at inference time are
-        characterisable. The work is ongoing.
+        Safety alignment via supervised fine-tuning is known to be brittle, but the mechanisms
+        behind this brittleness are poorly understood. This paper introduces a controlled 2D
+        linear classification setup that allows precise manipulation of the conflict between
+        SFT-encoded knowledge and in-context demonstrations. Three findings: ICL can overwrite
+        SFT behaviour with as little as 10% of the original training data; this overwriting
+        scales with model size, with larger models overwritten faster; and at the representational
+        level, SFT collapses internal representations along task-relevant axes, while conflicting
+        ICL reverses this collapse and recovers richer geometry similar to the pre-SFT state.
+        The work is ongoing.
       </p>
       <p class="pub-links">
         <a href="https://openreview.net/forum?id=iZ9eKf1ZCK" target="_blank" rel="noopener">OpenReview</a>
@@ -113,9 +115,10 @@
       </div>
       <div class="date">Sep 2025 &ndash; Present</div>
       <ul>
-        <li>Designed and ran controlled experiments probing how supervised fine-tuning and in-context learning interact, using the minimum number of contradictory in-context examples required to override a fine-tuned rule as a behavioural measure of alignment-induced rigidity.</li>
-        <li>Built reproducible PyTorch pipelines for synthetic data generation, distributed GPU evaluation, and layerwise RSA analysis across model checkpoints.</li>
-        <li>Work produced a paper accepted at the ICLR 2026 Trustworthy AI Workshop; the research is ongoing.</li>
+        <li>Introduced a controlled synthetic task enabling precise study of how in-context learning progressively overwrites knowledge encoded by supervised fine-tuning, with full control over the degree of conflict between SFT and ICL signals.</li>
+        <li>Ran scaling experiments across the Qwen model family, showing that larger models are overwritten faster, consistent with stronger ICL capability at scale.</li>
+        <li>Performed layerwise Representational Similarity Analysis on Llama3-8B, showing that SFT collapses internal representations along task-relevant axes and that conflicting ICL reverses this collapse, recovering geometry close to the pre-SFT state.</li>
+        <li>Built distributed PyTorch pipelines for synthetic data generation, model evaluation, and RSA analysis across checkpoints and model sizes. Work published at the ICLR 2026 Trustworthy AI Workshop.</li>
       </ul>
     </div>
 
